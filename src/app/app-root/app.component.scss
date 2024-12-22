@@ -1,13 +1,37 @@
+
 .main-app {
-    background-color: #c6daf6;
-    color: hsl(242, 29%, 25%);
     width: 100%;
-    margin: 20px auto;
-    color: 292929;
+    // margin: 20px auto;
+    background-color: rgba(121, 127, 240, 0.818);
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 
-    h1{
-       padding: 20px;
+    h1 {
+        padding: 20px 0 0 20px;
+        margin: 0 0 20px 0;
     }
+
+    .action-btn {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        
+
+        button {
+            padding: 7px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover{
+            background-color: #c6daf6;        }
+    }
+
+}
+
+div {
+    margin-top: 0px;
+    padding: 40px;
 }

@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'proj-basics';
+
+  currentPage: number = 1
+
+  showPage(page: number) {
+    this.currentPage = page
+  }
+
 }
