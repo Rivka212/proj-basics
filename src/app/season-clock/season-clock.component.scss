@@ -1,0 +1,33 @@
+.season-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 350px;
+    width: 200px;
+    background-color: rgb(136, 201, 220);
+    color: black;
+    margin: 40px;
+
+
+    h2,
+    h3 {
+        padding: 20px;
+    }
+
+    span {
+        font-size: 19px;
+    }
+
+    // img{
+    //     height: 100px;
+    //     width: 0px;
+    // }
+
+}
+
+.dark {
+    background-color: rgb(24, 18, 200);
+    color: rgb(189, 189, 221);
+}
