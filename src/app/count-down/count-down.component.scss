@@ -1,0 +1,26 @@
+.conut-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+    width: 200px; 
+    font-size: 70px;
+    font-weight: bold;
+    margin: 100px;
+    padding: 20px;
+    background-color: rgb(172, 142, 201);
+    color: rgb(47, 12, 81);
+    border-radius: 5px;
+}
+
+.conut-down span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.red{
+    color: rgb(189, 45, 45);
+}

@@ -3,10 +3,19 @@
   <section class="action-btn">
     <button (click)="showPage(1)">Animals</button>
     <button (click)="showPage(2)">Season Clock</button>
+    <button (click)="showPage(3)">Count Down</button>
+
   </section>
 </section>
 
-
 <div *ngIf="currentPage === 1">
   <animal></animal>
+</div>
+
+<div *ngIf="currentPage === 2">
+  <season-clock></season-clock>
+</div>
+
+<div *ngIf="currentPage === 3">
+  <count-down></count-down>
 </div>
