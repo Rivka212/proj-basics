@@ -1,0 +1,48 @@
+.watcher-app {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgb(131, 155, 226);
+
+    h2 {
+        margin: 30px;
+    }
+
+    button {
+        background-color: rgb(195, 195, 227);
+        border-color: rgb(93, 91, 91);
+        border-radius: 6px;
+        padding: 5px;
+        margin-left: 9px;
+        cursor: pointer;
+    }
+
+    div {
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(189, 189, 240);
+
+    }
+
+    button:hover {
+        background-color: rgb(154, 168, 204);
+    }
+}
+
+.modal {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+
+    height: 200px;
+    width: 170px;
+    background-color: rgb(230, 173, 173);
+    border-radius: 5px;
+
+    button {
+        margin-left: 30px;
+    }
+}

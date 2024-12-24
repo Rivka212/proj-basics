@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Count } from '../../models/countDown';
+import { Count } from '../../models/countDown.model';
 
 @Component({
   selector: 'count-down',

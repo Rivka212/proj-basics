@@ -6,13 +6,15 @@ import { AppComponent } from './app-root/app.component';
 import { AnimalComponent } from './animal/animal.component';
 import { SeasonClockComponent } from './season-clock/season-clock.component';
 import { CountDownComponent } from './count-down/count-down.component';
+import { WatcherAppComponent } from './watcher-app/watcher-app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AnimalComponent,
     SeasonClockComponent,
-    CountDownComponent
+    CountDownComponent,
+    WatcherAppComponent
   ],
   imports: [
     BrowserModule,

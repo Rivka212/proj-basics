@@ -4,7 +4,7 @@
     <button (click)="showPage(1)">Animals</button>
     <button (click)="showPage(2)">Season Clock</button>
     <button (click)="showPage(3)">Count Down</button>
-
+    <button (click)="showPage(4)">Watcher App</button>
   </section>
 </section>
 
@@ -19,3 +19,9 @@
 <div *ngIf="currentPage === 3">
   <count-down></count-down>
 </div>
+
+<div *ngIf="currentPage === 4">
+  <watcher-app></watcher-app>
+</div>
+
+

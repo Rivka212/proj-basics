@@ -1,0 +1,21 @@
+ <section class="watcher-app">
+    <h2>WatcherApp</h2>
+    <button (click)="onAddWatcher()">Add Watcher</button>
+   <div  *ngFor="let watcher of watchersArr">
+        <!-- <img src="netflix-avatar.png" alt="" >  -->
+        <h3>{{watcher.fullname}}</h3>
+        <button (click) ="onRemoveWatcher(watcher.id)">x</button>
+        <button (click) ="onSelectWatcher(watcher)">Select</button>
+    </div>
+</section>
+
+<div class="modal" *ngIf="isModalOpen">
+    <div class="modal-content">
+      <h2>{{ selectedWatcher?.fullname }}</h2>
+      <ul>
+        <li *ngFor="let movie of selectedWatcher?.movies">{{ movie }}</li>
+      </ul>
+      <button (click)="closeModal()">Close</button>
+    </div>
+  </div>
+  
