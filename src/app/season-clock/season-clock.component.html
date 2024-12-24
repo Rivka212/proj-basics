@@ -1,6 +1,8 @@
 <section (click)="toggleDarkMode()" [ngClass]="sectionStyle" class="season-clock">
     <h2>{{season.month}} - {{season.currentSeason}}</h2>
-    <img [src]="'../../imgs/' + season.currentSeason + '.png'" alt="{{season.currentSeason}} image" />
-    <h3>{{ getDayName(date, locale) }}</h3>
-    <span>{{ date.toLocaleTimeString(locale) }}</span>
+    <img [src]="'imgs/' + season.currentSeason + '.png'" alt="{{season.currentSeason}} image" />
+    <!-- <img src="assets/seasons/{{ season }}.png" /> -->
+    <!-- <h3>{{ day }}</h3> -->
+    <h3>{{ currDate | date : "EEEE" }}</h3>
+    <span>{{ currDate | date : "hh:mm:ss" }}</span>
 </section>

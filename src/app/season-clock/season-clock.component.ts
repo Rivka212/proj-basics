@@ -10,7 +10,7 @@ import { Season } from '../../models/seasonClock.model'
 })
 export class SeasonClockComponent {
 
-  date = new Date
+  currDate = new Date
   locale = 'en-US'
 
   season: Season = {
@@ -25,13 +25,13 @@ export class SeasonClockComponent {
   ngOnInit() {
     this.updateSeason()
     setInterval(() => {
-      this.date = new Date()
+      this.currDate = new Date()
       this.updateSeason();
     }, 1000);
   }
 
   updateSeason() {
-    const currentMonth = this.monthNames[this.date.getMonth()];
+    const currentMonth = this.monthNames[this.currDate.getMonth()];
     this.season.month = currentMonth;
 
     if (currentMonth === 'December' || currentMonth === 'January' || currentMonth === 'February') {
@@ -44,6 +44,9 @@ export class SeasonClockComponent {
       this.season.currentSeason = 'Autumn';
     }
   }
+
+  day = this.getDayName(this.currDate, this.locale)
+ formattedTime = this.currDate.toLocaleTimeString(this.locale)
 
   getDayName(date: Date, locale: string): string {
     return date.toLocaleDateString(locale, { weekday: 'long' });
